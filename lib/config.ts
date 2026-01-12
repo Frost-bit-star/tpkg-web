@@ -1,4 +1,5 @@
-export const config = {
+// lib/config.js
+const config = {
   app: {
     name: "tpkg",
     port: Number(process.env.PORT) || 3000,
@@ -14,8 +15,10 @@ export const config = {
   },
 
   github: {
-    clientId: process.env.GITHUB_CLIENT_ID!,
-    clientSecret: process.env.GITHUB_CLIENT_SECRET!,
-    scopes: ["read:user", "repo"], //  private repos
+    clientId: process.env.GITHUB_CLIENT_ID || "",
+    clientSecret: process.env.GITHUB_CLIENT_SECRET || "",
+    scopes: ["read:user", "repo"],
   },
 };
+
+module.exports = { config };
