@@ -1,0 +1,37 @@
+{
+  "name": "tpkg-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "tpkg web API for package publishing, installation, and GitHub authentication",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0 -p 2000",
+    "build": "next build",
+    "start": "next start -p 2000",
+    "lint": "next lint",
+    "db:generate": "drizzle-kit generate",
+    "db:push": "drizzle-kit push"
+  },
+  "dependencies": {
+    "next": "14.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "pg": "^8.11.5",
+    "drizzle-orm": "^0.30.10",
+    "node-fetch": "^3.3.2",
+    "jsonwebtoken": "^9.0.2",
+    "nanoid": "^5.0.7",
+    "octokit": "^3.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/pg": "^8.11.5",
+    "drizzle-kit": "^0.21.4",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.1.0",
+    "typescript": "^5.4.3"
+  }
+}
